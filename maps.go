@@ -7,8 +7,8 @@ import (
 
 func WordCount(s string) map[string]int {
 	m := make(map[string]int)
-	for _, x := range strings.Fields(s) {
-		m[x]++
+	for _, word := range strings.Fields(s) {
+		m[word]++
 	}
 	return m
 }
