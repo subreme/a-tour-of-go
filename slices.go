@@ -7,6 +7,8 @@ func Pic(dx, dy int) [][]uint8 {
 	for x := range pic {
 		pic[x] = make([]uint8, dx)
 		for y := range pic[x] {
+			// pic[x][y] = uint8((x+y)/2)
+			// pic[x][y] = uint8(x*y)
 			pic[x][y] = uint8(x ^ y)
 		}
 	}
